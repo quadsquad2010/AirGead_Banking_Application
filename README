@@ -1,0 +1,110 @@
+** Developer: Joshua Evans
+** Airgead Banking Application
+** CS-210 SNHU 2026
+
+
+The Airgead Banking App is a C++ console application designed to help users visualize the growth of an investment over time. The program calculates compound interest both with and without additional monthly deposits and displays two formatted year‑end reports. Users can run multiple simulations to compare different investment strategies.
+
+This project was developed following Airgead Banking’s functional requirements and coding standards, using an object‑oriented design for clarity, maintainability, and reusability.
+
+____________________________________________________
+=Features=
+-Accepts user input for:
+
+- Initial investment amount
+
+- Monthly deposit amount
+
+- Annual interest rate
+
+- Number of years
+
+- Validates all inputs to ensure they are positive numeric values
+
+- Calculates:
+
+- Monthly compounded interest
+
+- Year‑end balances
+
+- Year‑end earned interest
+
+- Displays two reports:
+
+- Without monthly deposits
+
+- With monthly deposits
+
+- Allows the user to run additional simulations without restarting the program
+____________________________________________________
+== How It Works ==
+The program converts the number of years into total months and applies the monthly compound‑interest formula:
+
+Interest
+=
+(
+Opening Amount
++
+Deposited Amount
+)
+×
+(
+Annual Rate
+/
+100
+12
+)
+At the end of each 12‑month cycle, the program records:
+
+Year number
+
+Year‑end balance
+
+Total interest earned that year
+
+These values are displayed in two separate tables.
+____________________________________________________
+Object‑Oriented Design
+The application is organized into the following classes:
+
+InvestmentData
+Stores all user‑provided investment parameters.
+
+InvestmentCalculator
+Performs all compound‑interest calculations and generates yearly records.
+
+ReportPrinter
+Formats and displays the two investment reports.
+
+Application
+Handles user interaction, input validation, and the main program loop.
+___________________________________________________
+main.cpp
+Application.h
+Application.cpp
+InvestmentData.h
+InvestmentData.cpp
+InvestmentCalculator.h
+InvestmentCalculator.cpp
+YearlyRecord.h
+ReportPrinter.h
+ReportPrinter.cpp
+README.txt (this file)
+____________________________________________________
+Use any C++17 compatible compiler.
+g++ -std=c++17 -o AirgeadApp main.cpp Application.cpp InvestmentData.cpp InvestmentCalculator.cpp ReportPrinter.cpp
+
+To Run Program:
+./AirgeadApp
+
+
+How to Use
+- Launch the program.
+
+- Enter the requested investment values.
+
+- Press Enter to continue.
+
+- Review the two generated reports.
+
+- Choose whether to run another simulation.
