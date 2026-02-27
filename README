@@ -107,4 +107,31 @@ How to Use
 
 - Review the two generated reports.
 
+
 - Choose whether to run another simulation.
+
+_________________________________________________________________________________________________________________________
+Module 8 Journal / Portfolio Submission
+
+  This project was created to provide users with a clear and accessible way to understand how their investments grow over time. Many people struggle to visualize the long‑term impact of compound interest, 
+especially when monthly deposits are involved. The Airgead Banking Application solves this problem by generating two side‑by‑side investment reports. There is the one with monthly deposits and one without which 
+allows users to compare strategies and make more informed financial decisions. By automating the calculations and presenting the results in clean, formatted tables, the program turns complex financial math into something
+easy for anyone to interpret.
+
+  One of the strongest aspects of this project is the object‑oriented structure. Separating the application into classes such as InvestmentData, InvestmentCalculator, ReportPrinter, and Application made the
+program organized, readable, and easy to maintain. Each class has a clear responsibility, which reduces coupling and makes the logic easier to follow. Input validation was also handled carefully to ensure
+users cannot accidentally break the program with invalid values. The formatted output tables are another highlight—they present the data cleanly and professionally, making the results easy to understand. There
+are several areas where the code could be improved for efficiency and scalability. For example, the calculation logic could be optimized by reducing repeated computations and potentially storing intermediate
+values more efficiently. Adding exception handling would make the program more robust and secure, especially when dealing with unexpected input or system errors. Another enhancement would be to abstract the 
+user interface further so the program could be adapted to a GUI or web interface without rewriting the core logic. These improvements would make the application more flexible, secure, and easier to extend in the future.
+
+  The most challenging part of the project was implementing the compound‑interest calculations in a way that remained accurate across different scenarios while still being easy to read and maintain. Ensuring that 
+the monthly compounding aligned correctly with the year‑end reporting required careful planning and testing. I overcame these challenges by breaking the logic into smaller functions, testing each part individually, 
+and using clear variable names to avoid confusion for myself and anyone in the future who would be reading the program. I relied on documentation, financial‑formula references, and debugging tools to verify that the 
+calculations matched expected results each and every time. Throughout this project, I expanded my support network by incorporating resources such as C++ reference documentation, financial‑math tutorials, debugging tools,
+and community forums like Stack Overflow. These resources helped clarify language‑specific behaviors, confirm formula accuracy, and troubleshoot unexpected issues. They will continue to be valuable for future projects. 
+This project strengthened several skills that will transfer directly to future coursework and software‑development projects. These include object‑oriented design, input validation, modular programming, formatted console
+output, and the ability to translate real‑world requirements into functional code. The experience of structuring a program around clear classes and responsibilities is especially valuable, as it mirrors the design patterns
+used in professional software development. Maintainability and readability were priorities throughout development. The codebase is organized into logical classes, each with a single responsibility, making it easy to locate
+and update specific functionality. Consistent naming conventions, comments, and clear method structures improve readability for anyone reviewing the code. By separating the calculation logic from the user interface and the
+reporting system, the program is adaptable to future enhancements—such as adding new report types, integrating a graphical interface, or expanding financial features—without requiring major rewrites.
